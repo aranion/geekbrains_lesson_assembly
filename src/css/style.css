@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  display: none;
+  padding: 10px;
+}
+
+.nav {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.nav__button {
+  width: 50%;
+  text-align: center;
+  background-color: rgb(206, 206, 206);
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.nav__button:hover {
+  background-color: rgb(177, 177, 177);
+  cursor: pointer;
+}
+
+.active {
+  background-color: rgb(177, 177, 177);
+  font-weight: bold;
+}
+
+.visible {
+  display: block;
+}
+
+#dateTimerResult {
+  text-align: center;
+  font-size: 40px;
+}
+
+#startTimer {
+  padding: 3px 30px;
+}
