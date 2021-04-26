@@ -38,11 +38,32 @@ form {
   display: block;
 }
 
-#dateTimerResult {
+.result {
   text-align: center;
   font-size: 40px;
 }
 
 #startTimer {
   padding: 3px 30px;
+}
+
+.content-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input {
+  width: 150px;
+  height: 25px;
+  margin: 10px;
+  padding: 0 5px;
+}
+
+.button {
+  width: 150px;
+  margin-left: calc(50% - 75px);
+  margin-right: calc(50% - 75px);
+  margin-top: 15px;
+  margin-bottom: 15px;
 }

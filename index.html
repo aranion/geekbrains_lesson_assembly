@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./src/css/style.css">
+  <!-- <link rel="stylesheet" href="./src/style/style.css"> -->
   <title>GeekBrains Assembly</title>
 
 </head>
@@ -16,30 +16,31 @@
     <div class="nav__button" data-name="timer">Таймер</div>
   </nav>
   <form id="dateCalc" class="visible">
-    <h3>Калькулятор дат</h3>
-    <label for="firstDate">
-      <strong>Первая дата:</strong>
-      <input type="date" name="calc" id="firstDateId">
-    </label>
-    <label for="secondDate">
-      <strong>Вторая дата:</strong>
-      <input type="date" name="calc" id="secondDateId">
-    </label>
-    <button type="submit">Рассчитать промежуток</button>
-    <p id=dateCalcResult></p>
+    <h2>Калькулятор дат</h2>
+    <section class="content-center">
+      <label for="firstDate">
+        <strong>Первая дата:</strong>
+        <input type="date" name="calc" id="firstDateId" class="input">
+      </label>
+      <label for="secondDate">
+        <strong>Вторая дата:</strong>
+        <input type="date" name="calc" id="secondDateId" class="input">
+      </label>
+    </section>
+    <button type="submit" class="button">Рассчитать промежуток</button>
+    <p id="dateCalcResult" class="result"></p>
   </form>
   <form id="timer">
-    <h3>Таймер</h3>
-    <label for="firstDate">
-      <strong>Задайте время:</strong>
-      <input type="time" name="calc" id="dateTimer">
-      <button type="submit" id="startTimer">Старт</button>
-      <p id=dateTimerResult></p>
-    </label>
+    <h2>Таймер</h2>
+    <section class="content-center">
+      <label for="firstDate">
+        <strong>Задайте время:</strong>
+        <input type="time" name="calc" id="dateTimer" class="input">
+        <button type="submit" id="startTimer" class="button">Старт</button>
+        <p id="dateTimerResult" class="result"></p>
+      </label>
+    </section>
   </form>
-
-  <script type="module" src="./src/mine.js"></script>
-  <script src="./src/load.js"></script>
 </body>
 
 </html>

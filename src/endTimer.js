@@ -1,9 +1,9 @@
 import addResultInHTML from "./addResultInHTML.js";
-import "./howler.js";
+import how from "howler";
 
 const buttonStartTimer = document.querySelector("#startTimer");
-const signal = new Howl({
-  urls: ["./src/sound/signal.wav"],
+const signal = new how.Howl({
+  src: ["./sound/signal.wav"],
 });
 
 export default function endTimer(objTimer, timerId) {

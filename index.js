@@ -1,6 +1,8 @@
-import "./datecalc.js";
-import "./timer.js";
-import toggleContent from "./navigation.js";
+import "./src/style/style.css";
+
+import "./src/datecalc.js";
+import "./src/timer.js";
+import toggleContent from "./src/navigation.js";
 
 const buttonsElem = document.querySelector(".nav").querySelectorAll("div");
 const contentsElem = document.querySelectorAll("form");

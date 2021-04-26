@@ -1,0 +1,44 @@
+{
+  "name": "assembly",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "buildDev": "rm -rf dist && webpack --mode development --config webpack.server.config.js && webpack --mode development --config webpack.dev.config.js --w",
+    "buildProd": "rm -rf dist && webpack --mode production --config webpack.server.config.js && webpack --mode production --config webpack.prod.config.js",
+    "startServer": "nodemon dist/server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aranion/geekbrains_lesson_assembly.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aranion/geekbrains_lesson_assembly/issues"
+  },
+  "homepage": "https://github.com/aranion/geekbrains_lesson_assembly#readme",
+  "devDependencies": {
+    "copy-webpack-plugin": "^5.0.1",
+    "css-loader": "^2.1.1",
+    "file-loader": "^3.0.1",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^1.5.0",
+    "nodemon": "^2.0.7",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "style-loader": "^0.23.1",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^4.29.6",
+    "webpack-bundle-analyzer": "^4.4.1",
+    "webpack-cli": "^3.3.0",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "howler": "^2.2.1",
+    "luxon": "^1.26.0"
+  }
+}
